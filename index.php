@@ -1,17 +1,28 @@
-<?php
-include('./config/database.php');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event driven</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="./assets/js/search.js"></script>
+</head>
 
-$sql = "SELECT * FROM reg";
-$result = $conn->query($sql);
+<body>
+<strong> Search: <strong>
+  <input onkeyup="search(this.value)" type="text" placeholder="Search region here...">
+  <hr>
+  <table border="1" style="width: 100%;">
+    <thead>
+      <tr>
+        <th width="150">No. of Regions</th>
+        <th style="text-align: left; padding-left:10px;">Regions</th>
+      </tr>
+    </thead>
+    <tbody id="results">
 
-if ($result->num_rows > 0) {
+    </tbody>
 
-  while($row = $result->fetch_assoc()) {
-    echo $row['Regions']."<br/>";
-  }
-} else {
-  echo "0 results";
-} 
-$conn->close();
-
-?>
+  </table>
+</body>
+</html>
