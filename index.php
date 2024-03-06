@@ -42,7 +42,7 @@
   <p>You can view all the Records here</p>
   <div class= "card mt-3">
     <div class= "card body">
-     <table class= "table table-bordered table hover">
+     <table class= "table table-bordered table-hover">
       <thead >
         <tr>
           <th width= "150" style="text-align: center">No. of Regions</th>
