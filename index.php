@@ -40,13 +40,14 @@
 <div class="container padding:2px">
   <p class= "h2 mt-3">Dashboard</p>
   <p>You can view all the Records here</p>
-  <div class= "card mt-3">
-    <div class= "card body">
-     <table class= "table table-bordered table-hover">
+  <div class= "card mt-2">
+  <div class="card-body">
+    <div class="row">
+    <table class= "table table-bordered table-hover">
       <thead >
         <tr>
-          <th width= "150" style="text-align: center">No. of Regions</th>
-          <th style = "text-align: left; padding-left: 10px" >Regions</th>
+          <th width= "150" style="text-align: center">Student ID</th>
+          <th style = "text-align: left; padding-left: 10px" >Complete Name</th>
           <th width= "50" style= "text-align:center">Action</th>
         </tr>
       </thead>
@@ -54,7 +55,8 @@
       </tbody>
      </table>
     </div>
-    <div class= "card footer">
+    </div>
+    <div class= "card-footer">
       ---
      </div>
   </div>

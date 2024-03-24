@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$db_name= "phl_region";
+$db_name= "std_info";
 
 $conn= new mysqli($servername, $username, $password, $db_name);
 
