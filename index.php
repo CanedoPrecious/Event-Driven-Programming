@@ -46,8 +46,8 @@
     <table class= "table table-bordered table-hover">
       <thead >
         <tr>
-          <th width= "150" style="text-align: center">Student ID</th>
-          <th style = "text-align: left; padding-left: 10px" >Complete Name</th>
+          <th width= "150" style="text-align: center">Barangay ID</th>
+          <th style = "text-align: left; padding-left: 10px" >Barangay Name</th>
           <th width= "50" style= "text-align:center">Action</th>
         </tr>
       </thead>

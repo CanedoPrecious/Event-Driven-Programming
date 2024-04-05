@@ -68,72 +68,56 @@
                     }
                     ?>
                     <div class="row">
-                        <div class="col-md-6">
-                            <label> Student ID : <b class="text-danger">*</b></label>
-                            <input name="inp_sid" required type="text" placeholder="Enter student ID here.."
+                        <div class="col">
+                            <label>Baranggay ID: <b class="text-danger">*</b></label>
+                            <input name="id" required type="number"
                                 class="form-control mt-2">
                         </div>
-                        <div class="col-md-6">
-                            <label> Learning Reference Number(LRN): <b class="text-danger">*</b></label>
-                            <input name="inp_lrn" required type="text" placeholder="Enter LRN here.."
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label> Barangay Code: <b class="text-danger">*</b></label>
+                                <input name="code" required type="number"
                                 class="form-control mt-2">
+                            </div>
                         </div>
 
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-3">
-                            <label>First Name : <b class="text-danger">*</b></label>
-                            <input name="inp_fname" required type="text" placeholder="Enter first name here.."
+                        <div class="row mt-3">
+                            <div class="col">
+                               <label>Barangay Name : <b class="text-danger">*</b></label>
+                               <input name="desc" required type="text"
                                 class="form-control mt-2">
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <label>Last Name : <b class="text-danger">*</b></label>
-                            <input name="inp_lname" required type="text" placeholder="Enter last name here.."
+
+                        <div class="row mt-3">
+                            <div class="col">
+                               <label>Region Code: <b class="text-danger">*</b></label>
+                                <input name="regCode" required type="number"
                                 class="form-control mt-2">
+                            </div>
                         </div>
-                        <div class="col-md-3">
-                        <label>Middle Name : <small>(Optional)</small></label>
-                            <input name="inp_mname" type="text" placeholder="Enter middle name here.."
-                                class="form-control mt-2">
-                            
+
+                        <div class="row mt-3">
+                            <div class="col">
+                              <label>Province Code:<b class="text-danger">*</b></label>
+                               <input name="provCode" type="number" 
+                               class="form-control mt-2">
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                        <label>Ext. Name : <small>(Optional)</small></label>
-                            <input name="inp_ename" type="text" placeholder="Ext. name here.."
-                                class="form-control mt-2">
-                           
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-md-3">
-                            <label>Gender : <b class="text-danger">*</b></label>
-                            <select name="inp_gender" required class="form-control mt-2">
-                                <option value="" disabled selected>-- SELECT GENDER --</option>
-                                <option value="Female">Female</option>
-                                <option value="Male">Male</option>
-                            </select>
-                        </div>
-                        <div class="col-md-4">
-                            <label>Contact Number : <b class="text-danger">*</b></label>
-                            <input name="inp_contact" required type="text" placeholder="09 XXXX XXXX"
-                                class="form-control mt-2">
-                        </div>
-                        <div class="col-md-3">
-                            <label>Email Address : <b class="text-danger">*</b></label>
-                            <input name="inp_email" required type="email" placeholder="Email Address"
-                                class="form-control mt-2">
-                        </div>
-                        <div class="col-md-2">
-                            <label>Status : <small>(Optional)</small></label>
-                            <input name="inp_status" type="text" placeholder="Enter the student status here.."
+
+                        <div class="row mt-3">
+                        <div class="col">
+                        <label>City Code:<b class="text-danger">*</b></label>
+                            <input name="cty" type="number" 
                                 class="form-control mt-2">
                         </div>
                     </div>
-                </div>
+       
                 <div class="card-footer">
                     <span style="float: right">
                         <button class="btn btn-success">
-                            Add New Student
+                            Add New Barangay
                         </button>
                     </span>
                 </div>
