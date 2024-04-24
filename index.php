@@ -14,7 +14,7 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
   <div class="container-fluid">
   <a class="navbar-brand" href="javascript:void(0)">
-      <img src="./assets/img/logo.png"  alt="Use data to see photos" style="width:50px;" class="rounded-pill"> 
+  <img src="./assets/img/Tcc-Logo.png" height="30"> 
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
@@ -46,8 +46,8 @@
     <table class= "table table-bordered table-hover">
       <thead >
         <tr>
-          <th width= "150" style="text-align: center">Barangay ID</th>
-          <th style = "text-align: left; padding-left: 10px" >Barangay Name</th>
+          <th width= "150" style="text-align: center">Student ID</th>
+          <th style = "text-align: left; padding-left: 10px" >Student Name</th>
           <th width= "50" style= "text-align:center">Action</th>
         </tr>
       </thead>
