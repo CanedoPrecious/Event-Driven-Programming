@@ -10,20 +10,22 @@ if (isset($_POST["type"])) {
 
     } elseif ($type == "province") {
         getcitymun($code);
-       
-    }  elseif ($type == "baranggay") {
+
+    } elseif ($type == "baranggay") {
         getbaranggy($code);
-       
-       
+
+
+    } elseif ($type == "poscode") {
+        getpostalcode($code);
     }
 }
 function getprovince($regCode)
 {
-    include('../config/database.php');
-    
+    include ('../config/database.php');
+
     $sql = "SELECT * FROM `ph_province` WHERE regCode='$regCode'";
     $result = $conn->query($sql);
-    
+
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
@@ -39,11 +41,11 @@ function getprovince($regCode)
 
 function getcitymun($provCode)
 {
-    include('../config/database.php');
-    
+    include ('../config/database.php');
+
     $sql = "SELECT * FROM `ph_citymun` WHERE provCode='$provCode'";
     $result = $conn->query($sql);
-    
+
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
@@ -60,11 +62,11 @@ function getcitymun($provCode)
 
 function getbaranggy($citymunCode)
 {
-    include('../config/database.php');
-    
+    include ('../config/database.php');
+
     $sql = "SELECT * FROM `ph_brgy` WHERE citymunCode='$citymunCode'";
     $result = $conn->query($sql);
-    
+
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
@@ -78,6 +80,23 @@ function getbaranggy($citymunCode)
     $conn->close();
 }
 
+
+
+function getpostalcode($citymunCode)
+{
+    include ('../config/database.php');
+
+    $sql = "SELECT * FROM `ph_postalcode` WHERE postal_citymunCode ='$citymunCode'";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        echo $row['postal_code']; 
+    } else {
+        echo "0"; 
+    }
+    $conn->close();
+}
 
 
 
